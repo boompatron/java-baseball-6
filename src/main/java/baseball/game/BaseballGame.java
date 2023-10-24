@@ -35,8 +35,6 @@ public class BaseballGame {
                 String inputData = getNumbers();
                 calcInfo(inputData);
 
-                // System.out.println("B: " + ball + ", S: " + strike );
-
                 if (strike == 3) {
                     break;
                 }
@@ -65,11 +63,6 @@ public class BaseballGame {
             }
         }
 
-//        System.out.print("ans: ");
-//        for (int i = 0; i < 3; i++) {
-//            System.out.print(answer.get(i) + ", ");
-//        }
-//        System.out.println();
     }
 
 
@@ -83,12 +76,6 @@ public class BaseballGame {
         }
 
         Collections.reverse(parsedData);
-
-//        System.out.print("input data : ");
-//        for (int i = 0; i < 3; i++) {
-//            System.out.print(parsedData.get(i) + ", ");
-//        }
-//        System.out.println();
 
         increaseBall(parsedData);
         increaseStrike(parsedData);
